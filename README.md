@@ -1,6 +1,6 @@
 # 💱 Currency Converter Web App
 
-A responsive and modern currency converter web app built with HTML, CSS, and JavaScript. This tool allows users to convert between currencies in real-time using the **free and unlimited [ExchangeRate.host](https://exchangerate.host)** API.
+A responsive and modern currency converter web app built with HTML, CSS, and JavaScript. This tool allows users to convert between currencies in real-time.
 
 ---
 
