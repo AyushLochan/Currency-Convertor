@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+
+        <div class="selection-container">
+            <div>
+                <p class="label">From:</p>
+                <div class="currency">
+                    <select id="from-currency"></select>
+                    <input type="number" id="from-amount" placeholder="0" value="1">
+                </div>
+            </div>
+        </div>
+
+        <div class="swap-container">
+            <button class="swap-btn" id="swap-btn">
+                Swap Currencies
+            </button>
+        </div>
+
+        <div class="selection-container">
+            <div>
+                <p class="label">To:</p>
+                <div class="currency">
+                    <select id="to-currency"></select>
+                    <input type="number" id="to-amount" placeholder="0" readonly>
+                </div>
+            </div>
+        </div>
+
+        <div class="rate" id="rate-info">
+            1 USD = 0.92 EUR
+        </div>
+
+        <div class="popular-currencies">
+            <div class="currency-chip" data-currency="USD">USD</div>
+            <div class="currency-chip" data-currency="EUR">EUR</div>
+            <div class="currency-chip" data-currency="INR">INR</div>
+            <div class="currency-chip" data-currency="GBP">GBP</div>
+            <div class="currency-chip" data-currency="JPY">JPY</div>
+            <div class="currency-chip" data-currency="CAD">CAD</div>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Fetching exchange rates...</p>
+        </div>
+
+        <div class="error-message" id="error-message">
+            Failed to fetch exchange rates. Please try again later.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
